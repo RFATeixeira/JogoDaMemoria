@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jolly+Lodger&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .font-outline-2 {
+    -webkit-text-stroke: 3px #8958ff;
+  }
+}
+
+@layer components {
+  /*grid*/
+  .gridGame {
+    @apply grid grid-cols-6 gap-8 justify-center items-center w-full max-w-[1200px];
+  }
+  .card {
+    @apply w-full aspect-square bg-brand-color-paper rounded-xl relative ease-linear transition duration-300 [-webkit-transform-style:preserve-3d];
+  }
+  .face {
+    @apply w-full h-full absolute rounded-xl;
+  }
+  .front {
+    @apply bg-brand-color-paper [transform:rotateY(180deg)] bg-no-repeat bg-center;
+  }
+  .back {
+    @apply bg-brand-color-purple [backface-visibility:hidden] bg-[url('../src/image/buuh.png')] bg-no-repeat bg-center bg-contain;
+  }
+  .reveal-card {
+    @apply [transform:rotateY(180deg)];
+  }
+}

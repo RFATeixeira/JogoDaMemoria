@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../src/output.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./src/image/buuh.png" type="image/x-icon" />
+    <script defer src="../src/game.js"></script>
+    <title>Jogo da memória</title>
+  </head>
+  <body
+    class="font-inter bg-dark-10 w-full bg-[url('../src/image/gradient.png')]"
+  >
+    <section class="mx-40 items-center justify-center flex flex-col">
+      <div class="w-screen invisible">
+        <div
+          class="fixed z-20 w-full h-full justify-center items-center flex backdrop-blur-sm"
+        >
+          <div
+            class="w-[650px] h-[400px] bg-dark-10 rounded-xl flex flex-col justify-center items-center gap-10 mt-32"
+          >
+            <img
+              src="./src/image/web.svg"
+              alt="web"
+              class="fixed -mt-[350px] -mr-[585px]"
+            />
+            <span
+              class="text-7xl text-light-10 font-outline-2 font-normal font-body"
+              >Buuh!</span
+            >
+            <span class="text-light-10 text-xl px-20 text-center leading-8"
+              >Parabéns! Você completou este jogo da memória. Que tal
+              experimentar uma dificuldade diferente ou jogar novamente na mesma
+              dificuldade?</span
+            >
+            <button
+              id="btnReload"
+              class="bg-brand-color-purple text-light-10 rounded-lg w-full p-2 max-w-[312px] text-lg mt-4 font-semibold"
+            >
+              Jogar novamente
+            </button>
+          </div>
+        </div>
+      </div>
+      <header class="flex justify-center items-center w-full h-72">
+        <span
+          class="text-8xl text-light-10 font-outline-2 font-normal font-body"
+          >Jogo da Memória</span
+        >
+      </header>
+      <div class="gridGame"></div>
+    </section>
+  </body>
+</html>
