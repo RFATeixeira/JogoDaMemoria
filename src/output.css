@@ -600,10 +600,17 @@ video {
   display: grid;
   width: 100%;
   max-width: 1200px;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 0.5rem;
+}
+
+@media (min-width: 640px){
+  .gridGame{
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 2rem;
+  }
 }
 
 .card{
@@ -807,11 +814,6 @@ video {
 .mx-3{
   margin-left: 0.75rem;
   margin-right: 0.75rem;
-}
-
-.mx-40{
-  margin-left: 10rem;
-  margin-right: 10rem;
 }
 
 .mx-5{
@@ -2548,11 +2550,6 @@ video {
   line-height: 1;
 }
 
-.text-8xl{
-  font-size: 6rem;
-  line-height: 1;
-}
-
 .text-\[24px\]{
   font-size: 24px;
 }
@@ -3182,6 +3179,11 @@ video {
 }
 
 @media (min-width: 640px){
+  .sm\:text-8xl{
+    font-size: 6rem;
+    line-height: 1;
+  }
+
   .sm\:underline{
     text-decoration-line: underline;
   }

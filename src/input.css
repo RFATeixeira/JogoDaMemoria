@@ -13,7 +13,7 @@
 @layer components {
   /*grid*/
   .gridGame {
-    @apply grid grid-cols-6 gap-8 justify-center items-center w-full max-w-[1200px];
+    @apply grid grid-cols-3 sm:grid-cols-6 gap-2 sm:gap-8 justify-center items-center w-full max-w-[1200px];
   }
   .card {
     @apply w-full aspect-square bg-brand-color-paper rounded-xl relative ease-linear transition duration-300 [-webkit-transform-style:preserve-3d];
