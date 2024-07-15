@@ -22,7 +22,7 @@
     @apply w-full h-full absolute rounded-xl;
   }
   .front {
-    @apply bg-brand-color-paper [transform:rotateY(180deg)] bg-no-repeat bg-center;
+    @apply bg-brand-color-paper [transform:rotateY(180deg)] bg-no-repeat bg-center bg-contain;
   }
   .back {
     @apply bg-brand-color-purple [backface-visibility:hidden] bg-[url('../src/image/buuh.png')] bg-no-repeat bg-center bg-contain;

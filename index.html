@@ -17,18 +17,21 @@
           class="fixed z-20 w-full h-full justify-center items-center flex backdrop-blur-sm"
         >
           <div
-            class="w-[650px] h-[400px] bg-dark-10 rounded-xl flex flex-col justify-center items-center gap-10 mt-32"
+            class="w-[650px] h-[400px] bg-dark-10 rounded-xl flex flex-col justify-center items-center gap-4 sm:gap-10 mt-32 px-8 mx-6"
           >
-            <img
-              src="./src/image/web.svg"
-              alt="web"
-              class="fixed -mt-[350px] -mr-[585px]"
-            />
+            <div class="flex justify-end w-full -mt-10">
+              <img
+                src="./src/image/web.svg"
+                alt="web"
+                class="-mr-12 -mt-16 sm:-mt-8 fixed"
+              />
+            </div>
             <span
               class="text-7xl text-light-10 font-outline-2 font-normal font-body"
               >Buuh!</span
             >
-            <span class="text-light-10 text-xl px-20 text-center leading-8"
+            <span
+              class="text-light-10 text-sm sm:text-xl px-0 sm:px-10 text-center leading-6 sm:leading-8"
               >Parabéns! Você completou este jogo da memória. Que tal
               experimentar uma dificuldade diferente ou jogar novamente na mesma
               dificuldade?</span
@@ -42,7 +45,7 @@
           </div>
         </div>
       </div>
-      <header class="flex justify-center items-center w-full h-72">
+      <header class="flex justify-center items-center w-full h-48 m:dh-72">
         <span
           class="text-7xl sm:text-8xl text-light-10 font-outline-2 font-normal font-body text-center"
           >Jogo da Memória</span
